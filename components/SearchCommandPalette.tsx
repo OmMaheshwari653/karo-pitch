@@ -55,7 +55,10 @@ export default function SearchCommandPalette({
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    if (!isOpen) setQuery("");
+    if (!isOpen) {
+      const id = requestAnimationFrame(() => setQuery(""));
+      return () => cancelAnimationFrame(id);
+    }
   }, [isOpen]);
 
   return (
@@ -105,7 +108,7 @@ export default function SearchCommandPalette({
                   <div className="flex flex-col items-center py-8 gap-2">
                     <Search className="w-8 h-8 text-slate-600" />
                     <p className="text-slate-500 text-sm">
-                      No results for "{query}"
+                      No results for &ldquo;{query}&rdquo;
                     </p>
                   </div>
                 </Command.Empty>
@@ -182,7 +185,9 @@ export default function SearchCommandPalette({
               <div className="border-t border-white/5 px-4 py-2.5 flex items-center justify-between">
                 <div className="flex items-center gap-3 text-xs text-slate-600">
                   <span className="flex items-center gap-1">
-                    <kbd className="bg-white/5 px-1 rounded text-slate-500">↑↓</kbd>
+                    <kbd className="bg-white/5 px-1 rounded text-slate-500">
+                      ↑↓
+                    </kbd>
                     navigate
                   </span>
                   <span className="flex items-center gap-1">

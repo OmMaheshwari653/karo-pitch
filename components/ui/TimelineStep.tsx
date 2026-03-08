@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { cn } from "@/lib/utils";
 
 interface TimelineStepProps {
   step: number;

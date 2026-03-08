@@ -1,14 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  ArrowRight,
-  Zap,
-  TrendingUp,
-  IndianRupee,
-  Users,
-  CheckCircle2,
-} from "lucide-react";
+import { ArrowRight, Zap, CheckCircle2 } from "lucide-react";
 import Marquee from "react-fast-marquee";
 import { useState, useEffect } from "react";
 
