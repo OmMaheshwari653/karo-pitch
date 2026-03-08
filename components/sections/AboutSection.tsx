@@ -30,9 +30,11 @@ const PILLARS = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative bg-[#07070a] py-24 lg:py-32 overflow-hidden">
+    <section
+      id="about"
+      className="relative bg-[#07070a] py-24 lg:py-32 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
-
         {/* Opening statement - no label, just lead with the insight */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 mb-24">
           {/* Left */}
@@ -62,8 +64,8 @@ export default function AboutSection() {
           >
             <p className="text-base sm:text-lg font-light leading-relaxed text-white/45 mb-4">
               After five years documenting India&apos;s startup ecosystem
-              through KaroStartup, we kept seeing the same gap: founders
-              with real businesses and real traction, but zero access to investors.
+              through KaroStartup, we kept seeing the same gap: founders with
+              real businesses and real traction, but zero access to investors.
             </p>
             <p className="text-sm text-white/30 leading-relaxed">
               Karo Pitch is our fix. A structured platform where geography
@@ -98,7 +100,10 @@ export default function AboutSection() {
                 transition={{ delay: i * 0.06 }}
                 className="flex items-baseline gap-2"
               >
-                <span className="text-3xl sm:text-4xl font-bold tracking-tight" style={{ color: stat.accent }}>
+                <span
+                  className="text-3xl sm:text-4xl font-bold tracking-tight"
+                  style={{ color: stat.accent }}
+                >
                   {stat.value}
                 </span>
                 <span className="text-xs text-white/30 uppercase tracking-wider font-medium">
@@ -139,7 +144,9 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <span className="text-xs font-mono text-white/15 tracking-wider">{pillar.number}</span>
+              <span className="text-xs font-mono text-white/15 tracking-wider">
+                {pillar.number}
+              </span>
               <h3 className="text-base font-semibold text-white mb-2 mt-1 tracking-tight">
                 {pillar.title}
               </h3>

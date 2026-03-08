@@ -85,8 +85,8 @@ export default function WhoCanApply() {
             transition={{ delay: 0.1 }}
             className="text-white/40 text-base leading-relaxed"
           >
-            Early-stage founders across sectors. A product, a few customers,
-            and genuine ambition is all it takes.
+            Early-stage founders across sectors. A product, a few customers, and
+            genuine ambition is all it takes.
           </motion.p>
         </div>
 
@@ -106,7 +106,9 @@ export default function WhoCanApply() {
               {/* Accent line on top */}
               <div
                 className="absolute top-0 left-6 right-6 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: `linear-gradient(90deg, transparent, ${accent}40, transparent)` }}
+                style={{
+                  background: `linear-gradient(90deg, transparent, ${accent}40, transparent)`,
+                }}
               />
 
               <div
@@ -115,7 +117,9 @@ export default function WhoCanApply() {
               >
                 <Icon className="w-5 h-5" style={{ color: accent }} />
               </div>
-              <h3 className="text-white font-semibold text-sm mb-1.5 tracking-tight">{label}</h3>
+              <h3 className="text-white font-semibold text-sm mb-1.5 tracking-tight">
+                {label}
+              </h3>
               <p className="text-white/35 text-sm leading-relaxed">{desc}</p>
             </motion.div>
           ))}
@@ -131,9 +135,12 @@ export default function WhoCanApply() {
             className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5"
           >
             <div>
-              <p className="text-white font-semibold text-base">Not sure if you fit?</p>
+              <p className="text-white font-semibold text-base">
+                Not sure if you fit?
+              </p>
               <p className="text-white/25 text-sm mt-1">
-                If you have a real business with real customers, apply anyway. We read every one.
+                If you have a real business with real customers, apply anyway.
+                We read every one.
               </p>
             </div>
             <button className="btn-primary flex-shrink-0">

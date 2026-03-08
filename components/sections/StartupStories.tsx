@@ -4,12 +4,84 @@ import { motion } from "framer-motion";
 import { ArrowRight, Clock, BookOpen } from "lucide-react";
 
 const STORIES = [
-  { id: "1", startup: "KisanMart", logo: "\uD83C\uDF3E", founder: "Rohit Verma", founderInitials: "RV", title: "How a Farmer\u2019s Son Built a \u20B910Cr AgriTech from Indore", excerpt: "Growing up watching his father struggle with middlemen, Rohit built KisanMart to directly connect 50,000 farmers to buyers. Here\u2019s the full journey from \u20B90 to \u20B910Cr ARR.", category: "AgriTech", readTime: "8 min", tag: "Founder Story" },
-  { id: "2", startup: "Shiksha360", logo: "\uD83D\uDCDA", founder: "Ananya Sharma", founderInitials: "AS", title: "Teaching 500K Rural Students With No English Content", excerpt: "Ananya cracked the vernacular EdTech puzzle that Byju\u2019s and Unacademy couldn\u2019t. Her insight from Rajasthan classrooms changed how they build the product completely.", category: "EdTech", readTime: "6 min", tag: "Product Insight" },
-  { id: "3", startup: "PayKaro", logo: "\uD83D\uDCB3", founder: "Pradeep Shah", founderInitials: "PS", title: "We Got 3 No\u2019s Before Bharat Angels Said Yes", excerpt: "Pradeep shares the unfiltered story of pitching to 20+ investors, what went wrong, how Karo Pitch helped refine the narrative, and the moment everything clicked.", category: "FinTech", readTime: "10 min", tag: "Fundraising" },
-  { id: "4", startup: "GreenWatt", logo: "\u26A1", founder: "Suresh Babu", founderInitials: "SB", title: "Powering 200 Villages in Tamil Nadu with \u20B91Cr Raised", excerpt: "Suresh proves you don\u2019t need a Silicon Valley network to solve India\u2019s energy problem. A bootstrapped journey from Coimbatore that is now attracting global climate tech funds.", category: "CleanTech", readTime: "7 min", tag: "Impact Story" },
-  { id: "5", startup: "HealthBharat", logo: "\uD83C\uDFE5", founder: "Dr. Kavya Mishra", founderInitials: "KM", title: "Doctor in a Tier-3 Town: A Case for Rural Healthtech", excerpt: "Dr. Kavya gave up a city hospital salary to bring affordable diagnostics to UP\u2019s smallest towns. How she built HealthBharat\u2019s 10-minute consultation at \u20B999.", category: "HealthTech", readTime: "9 min", tag: "Founder Story" },
-  { id: "6", startup: "LogiRoute", logo: "\uD83D\uDE9B", founder: "Vikram Joshi", founderInitials: "VJ", title: "Cracking Last-Mile Delivery in India\u2019s Heartland", excerpt: "Vikram turned his failed logistics company into a data goldmine. How he pivoted LogiRoute into an AI-first platform that delivers 35% cost savings to e-commerce players.", category: "LogiTech", readTime: "5 min", tag: "Product Insight" },
+  {
+    id: "1",
+    startup: "KisanMart",
+    logo: "\uD83C\uDF3E",
+    founder: "Rohit Verma",
+    founderInitials: "RV",
+    title: "How a Farmer\u2019s Son Built a \u20B910Cr AgriTech from Indore",
+    excerpt:
+      "Growing up watching his father struggle with middlemen, Rohit built KisanMart to directly connect 50,000 farmers to buyers. Here\u2019s the full journey from \u20B90 to \u20B910Cr ARR.",
+    category: "AgriTech",
+    readTime: "8 min",
+    tag: "Founder Story",
+  },
+  {
+    id: "2",
+    startup: "Shiksha360",
+    logo: "\uD83D\uDCDA",
+    founder: "Ananya Sharma",
+    founderInitials: "AS",
+    title: "Teaching 500K Rural Students With No English Content",
+    excerpt:
+      "Ananya cracked the vernacular EdTech puzzle that Byju\u2019s and Unacademy couldn\u2019t. Her insight from Rajasthan classrooms changed how they build the product completely.",
+    category: "EdTech",
+    readTime: "6 min",
+    tag: "Product Insight",
+  },
+  {
+    id: "3",
+    startup: "PayKaro",
+    logo: "\uD83D\uDCB3",
+    founder: "Pradeep Shah",
+    founderInitials: "PS",
+    title: "We Got 3 No\u2019s Before Bharat Angels Said Yes",
+    excerpt:
+      "Pradeep shares the unfiltered story of pitching to 20+ investors, what went wrong, how Karo Pitch helped refine the narrative, and the moment everything clicked.",
+    category: "FinTech",
+    readTime: "10 min",
+    tag: "Fundraising",
+  },
+  {
+    id: "4",
+    startup: "GreenWatt",
+    logo: "\u26A1",
+    founder: "Suresh Babu",
+    founderInitials: "SB",
+    title: "Powering 200 Villages in Tamil Nadu with \u20B91Cr Raised",
+    excerpt:
+      "Suresh proves you don\u2019t need a Silicon Valley network to solve India\u2019s energy problem. A bootstrapped journey from Coimbatore that is now attracting global climate tech funds.",
+    category: "CleanTech",
+    readTime: "7 min",
+    tag: "Impact Story",
+  },
+  {
+    id: "5",
+    startup: "HealthBharat",
+    logo: "\uD83C\uDFE5",
+    founder: "Dr. Kavya Mishra",
+    founderInitials: "KM",
+    title: "Doctor in a Tier-3 Town: A Case for Rural Healthtech",
+    excerpt:
+      "Dr. Kavya gave up a city hospital salary to bring affordable diagnostics to UP\u2019s smallest towns. How she built HealthBharat\u2019s 10-minute consultation at \u20B999.",
+    category: "HealthTech",
+    readTime: "9 min",
+    tag: "Founder Story",
+  },
+  {
+    id: "6",
+    startup: "LogiRoute",
+    logo: "\uD83D\uDE9B",
+    founder: "Vikram Joshi",
+    founderInitials: "VJ",
+    title: "Cracking Last-Mile Delivery in India\u2019s Heartland",
+    excerpt:
+      "Vikram turned his failed logistics company into a data goldmine. How he pivoted LogiRoute into an AI-first platform that delivers 35% cost savings to e-commerce players.",
+    category: "LogiTech",
+    readTime: "5 min",
+    tag: "Product Insight",
+  },
 ];
 
 export default function StartupStories() {
@@ -69,9 +141,13 @@ export default function StartupStories() {
                 <div className="w-8 h-8 rounded-full bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-xs font-semibold text-white/40">
                   {featured.founderInitials}
                 </div>
-                <span className="text-sm text-white/30">{featured.founder}</span>
+                <span className="text-sm text-white/30">
+                  {featured.founder}
+                </span>
                 <span className="text-white/10">&middot;</span>
-                <span className="text-sm text-white/20">{featured.category}</span>
+                <span className="text-sm text-white/20">
+                  {featured.category}
+                </span>
               </div>
             </div>
             <div className="flex-shrink-0">
@@ -116,7 +192,9 @@ export default function StartupStories() {
                   </div>
                   <span className="text-xs text-white/25">{story.founder}</span>
                   <span className="text-white/10">&middot;</span>
-                  <span className="text-xs text-white/20">{story.category}</span>
+                  <span className="text-xs text-white/20">
+                    {story.category}
+                  </span>
                 </div>
                 <ArrowRight className="w-4 h-4 text-white/10 group-hover:text-[#f59e0b] group-hover:translate-x-0.5 transition-all" />
               </div>

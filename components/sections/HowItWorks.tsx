@@ -53,8 +53,8 @@ export default function HowItWorks() {
             How it works
           </h2>
           <p className="text-white/35 text-base max-w-md leading-relaxed">
-            From pitch deck to term sheet in four steps.
-            Transparent. Founder-first.
+            From pitch deck to term sheet in four steps. Transparent.
+            Founder-first.
           </p>
         </motion.div>
 
@@ -73,7 +73,10 @@ export default function HowItWorks() {
                 <div className="flex items-center gap-3 md:flex-col md:items-start md:gap-2">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center"
-                    style={{ background: `${step.accent}12`, color: step.accent }}
+                    style={{
+                      background: `${step.accent}12`,
+                      color: step.accent,
+                    }}
                   >
                     {step.icon}
                   </div>

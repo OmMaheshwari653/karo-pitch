@@ -152,8 +152,8 @@ export default function StartupDiscovery() {
           transition={{ delay: 0.1 }}
           className="text-white/40 max-w-md mb-10 text-sm leading-relaxed"
         >
-          Vetted founders from across Bharat. Filter by category, stage,
-          and find your next investment.
+          Vetted founders from across Bharat. Filter by category, stage, and
+          find your next investment.
         </motion.p>
 
         {/* Filters */}
